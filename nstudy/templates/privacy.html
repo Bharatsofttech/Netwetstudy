@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netwet Study - Academic & Competitive Exam Courses Online</title>
+  <meta name="description" content="Read the privacy policy of Netwet Study to learn how we collect, use, and protect your data while using our online academic and competitive exam courses platform.">
+  <meta name="keywords" content="Netwet Study privacy policy, data protection, user information, academic courses, competitive exams, online education privacy">
+
+
+  <link rel="stylesheet" href="{% static 'CSS/custom.css' %}">
+  <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favlogo.png'%}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+ {% include 'nav.html' %}
+ <br><br><br>
+ <!-- contactus -->
+ <section class="p-2 mt-2" style="background-color: #f8f9fa;">
+    <div class="p-0">
+      
+      <div class="row align-items-center">
+        <!-- Privacy Image -->
+        <div class="col-md-6 mb-4 mb-md-0 text-center">
+          <img src="{% static 'images/privacy.jpg'%}" alt="Privacy Policy" class="img-fluid rounded shadow">
+        </div>
+        
+        <!-- Privacy Policy Content -->
+        <div class="col-md-6">
+          <h2 class="mb-3" style="color: #4b87f8;">Privacy Policy</h2>
+          <p class="lead">
+            At Netwet Study, your privacy is our priority. We are committed to safeguarding your personal information while offering quality academic and competitive exam courses.
+          </p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><strong>✔️ Data Security:</strong> Your data is encrypted and securely stored.</li>
+            <li class="mb-2"><strong>✔️ No Sharing Policy:</strong> We never sell or share your information with third parties.</li>
+            <li class="mb-2"><strong>✔️ Transparency:</strong> We clearly explain what data we collect and why.</li>
+          </ul>
+          <p>
+            By using our platform, you agree to our privacy practices outlined here. We may update this policy periodically.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- end -->
+
+<!-- Footer  -->
+{% include 'footer.html'%}
+
+<!-- Footer End -->
+
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' c%}"></script>
+ 
+  <!-- Add Bootstrap Icons -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

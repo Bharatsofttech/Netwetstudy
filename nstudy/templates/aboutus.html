@@ -1,0 +1,65 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netwet Study - Academic & Competitive Exam Courses Online</title>
+  <meta name="description" content="Learn more about Netwet Study, your trusted online platform for academic and competitive exam preparation. We offer expert-led courses, interactive learning tools, and personalized guidance to help students succeed in school and competitive exams." />
+  <meta name="keywords" content="Netwet Study, online courses, academic learning, competitive exams, exam preparation, online education, study platform" />
+
+  <link rel="stylesheet" href="{% static 'CSS/custom.css' %}">
+  <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favlogo.png'%}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+ {% include 'nav.html' %}
+ <br> <br> <br>
+ <!-- Aboutus -->
+ <div class="p-2 mt-5">
+  <div class="row align-items-center g-4">
+    <!-- Image Column -->
+    <div class="col-md-6 text-center">
+      <img src="{% static 'images/aboutus.jpg'%}" alt="About Netwet Study" class="about-image">
+    </div>
+
+    <!-- Privacy Policy Content Column -->
+    <div class="col-md-6">
+      <div class="privacy-policy-card">
+        <h2 class="text-theme">About Us</h2>
+        <p>Welcome to <strong>NETWET STUDY</strong>, your trusted destination for competitive examination and academic course preparation.</p>
+        <ul>
+          <li>Founded in 2019 as Lakshya Classes Forwisganj, our institution was built on the vision of providing focused and effective education to students striving for excellence. With years of experience and growing success, we rebranded to NETWET STUDY, a name that reflects our modern, tech-driven approach to learning.
+          </li>
+          <li>At NETWET STUDY, we specialize in preparing students for a variety of competitive exams as well as academic courses—catering to both school and college-level learners. Our comprehensive online and offline classes ensure that every student can access quality education, regardless of location.</li>
+          <li>We believe that education is not just about passing exams but about building a strong foundation for life. That’s why we focus on concept clarity, personalized mentoring, and continuous assessment to bring out the best in every student.</li>
+        </ul>
+        <p>Join <strong>NETWET STUDY </strong>and take the next step toward your goals with confidence and support.</p>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+   <!-- end -->
+
+<!-- Footer  -->
+{% include 'footer.html'%}
+
+<!-- Footer End -->
+
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' c%}"></script>
+ 
+  <!-- Add Bootstrap Icons -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
