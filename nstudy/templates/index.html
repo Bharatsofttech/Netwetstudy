@@ -1,0 +1,576 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netwet Study - Academic & Competitive Exam Courses Online</title>
+  <!-- Meta Description -->
+<meta name="description" content="Join Netwet Study for comprehensive online academic courses and competitive exam preparation. Expert instructors, interactive content, and success-driven results.">
+
+<!-- Meta Keywords (optional but not highly used by search engines) -->
+<meta name="keywords" content="Netwet Study, academic courses, competitive exams, online learning, exam preparation, study materials, online coaching">
+
+<!-- Canonical URL (recommended for SEO) -->
+<link rel="canonical" href="https://www.netwetstudy.com/" />
+  <link rel="stylesheet" href="{% static 'CSS/custom.css' %}">
+  <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favlogo.png'%}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+ {% include 'nav.html' %}
+ <br><br>
+  <!-- Full Width Carousel -->
+<section class="container-fluid px-0 mt-5">
+  <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <a href="#">
+          <img src="{% static 'images/slide2.jpg'%}" class="d-block w-100  img-fluid" alt="Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Slide 1 Title</h5>
+            <p>Click to learn more about Slide 1</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <a href="#">
+          <img src="{% static 'images/slide3.jpg'%}" class="d-block w-100 img-fluid" alt="Slide 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Slide 2 Title</h5>
+            <p>Click to explore Slide 2</p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <a href="#">
+          <img src="{% static 'images/slide4.jpg'%}" class="d-block w-100 img-fluid" alt="Slide 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Slide 3 Title</h5>
+            <p>Discover more about Slide 3</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-primary rounded-circle p-2" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-primary rounded-circle p-2" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+<!-- New Course -->
+<div class="p-5">
+  <h2 class="mb-4 text-center section-title">New Courses</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    
+    <div class="col">
+      <div class="card course-card1">
+        <img src="{% static 'images/new1.jpg'%}" class="card-img-top img-fluid" alt="Course 1">
+        <div class="card-body">
+          <h5 class="card-title">Web Development</h5>
+          <a href="#" class="btn btn-primary w-100">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card course-card1">
+        <img src="{% static 'images/new2.jpg'%}" class="card-img-top img-fluid" alt="Course 2">
+        <div class="card-body">
+          <h5 class="card-title">Graphic Design</h5>
+          <a href="#" class="btn btn-primary w-100">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card course-card1">
+        <img src="{% static 'images/new2.jpg'%}" class="card-img-top img-fluid" alt="Course 2">
+        <div class="card-body">
+          <h5 class="card-title">Graphic Design</h5>
+          <a href="#" class="btn btn-primary w-100">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+
+  </div>
+</div>
+
+<!-- New Course End -->
+
+<!-- Popular  Course -->
+<div class="p-5">
+  <h2 class="mb-4 text-center section-title">Popular Courses</h2>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    
+    <div class="col">
+      <div class="card course-card">
+        <img src="{% static 'images/popular1.jpg'%}" class="card-img-top img-fluid" alt="Course 1">
+        <div class="card-body">
+          <h5 class="card-title">Web Development</h5>
+          <a href="#" class="btn btn-primary w-100">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card course-card">
+        <img src="{% static 'images/popular2.jpg'%}" class="card-img-top img-fluid" alt="Course 2">
+        <div class="card-body">
+          <h5 class="card-title">Graphic Design</h5>
+          <a href="#" class="btn btn-primary w-100">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card course-card">
+        <img src="{% static 'images/popular3.jpg'%}" class="card-img-top img-fluid" alt="Course 3">
+        <div class="card-body">
+          <h5 class="card-title">Data Science</h5>
+          <a href="#" class="btn btn-primary w-100">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card course-card">
+        <img src="{% static 'images/popular4.png'%}" class="card-img-top img-fluid" alt="Course 4">
+        <div class="card-body">
+          <h5 class="card-title">Digital Marketing</h5>
+          <a href="#" class="btn btn-primary w-100">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Popular End -->
+
+<!-- Study Material -->
+<div class="p-5 justify-content-center">
+  <h2 class="text-center mb-4" style="color: #4b87f8;">Study Materials</h2>
+  <div class="row g-3">
+    <!-- Repeat this block for each book -->
+    <div class="col-6 col-md-2">
+      <div class="study-card">
+        <img src="{% static 'images/book.jpg'%}" alt="Book 1" class="img-fluid">
+        <div class="study-card-title">Book 1</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-2">
+      <div class="study-card">
+        <img src="{% static 'images/book.jpg'%}" alt="Book 2" class="img-fluid">
+        <div class="study-card-title">Book 2</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-2">
+      <div class="study-card">
+        <img src="{% static 'images/book.jpg'%}" alt="Book 3" class="img-fluid">
+        <div class="study-card-title">Book 3</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-2">
+      <div class="study-card">
+        <img src="{% static 'images/book.jpg'%}" alt="Book 4" class="img-fluid">
+        <div class="study-card-title">Book 4</div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-2">
+      <div class="study-card">
+        <img src="{% static 'images/book.jpg'%}" alt="Book 5" class="img-fluid">
+        <div class="study-card-title">Book 5</div>
+      </div>
+    </div>
+    <div class="col-6 col-md-2">
+      <div class="study-card">
+        <img src="{% static 'images/book.jpg'%}" alt="Book 5" class="img-fluid">
+        <div class="study-card-title">Book 6</div>
+      </div>
+    </div>
+
+
+    <!-- Add more cards as needed -->
+  </div>
+</div>
+
+<!-- End -->
+
+<!-- Success Stories -->
+<section class="success-section">
+  <div class="p-5">
+    <h2 class="text-center mb-5" style="color: #4b87f8;">Success Stories</h2>
+    <div class="row g-4">
+      
+      <!-- Story Card -->
+      <div class="col-6 col-lg-3">
+        <div class="story-card">
+          <img src="{% static 'images/success.jpg'%}" alt="Story 1" class="story-image">
+          <div class="story-content">
+            <div class="story-title">Jane's Journey</div>
+            <div class="story-desc overflow-hidden">From part-time worker to full-time tech lead in just one year.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="story-card">
+          <img src="{% static 'images/success.jpg'%}" alt="Story 2" class="story-image">
+          <div class="story-content">
+            <div class="story-title">Mark's Mission</div>
+            <div class="story-desc overflow-hidden">Transitioned from retail to data science through online learning.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="story-card">
+          <img src="{% static 'images/success.jpg'%}" alt="Story 3" class="story-image">
+          <div class="story-content">
+            <div class="story-title">Sophie's Leap</div>
+            <div class="story-desc overflow-hidden">Launched her own app after just 6 months of coding.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-lg-3">
+        <div class="story-card">
+          <img src="{% static 'images/success.jpg'%}" alt="Story 4" class="story-image">
+          <div class="story-content">
+            <div class="story-title">Alex's Rise</div>
+            <div class="story-desc overflow-hidden">From novice to award-winning designer in under a year.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- end -->
+ <!-- Test Series -->
+ <div class="p-5">
+  <div class="row g-4">
+    <!-- Responsive Column: 1 on mobile, 2 on tablet, 4 on desktop -->
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card card-custom">
+        <img src="{%  static 'images/testseries.jpg'%}" class="card-img-top" alt="SSC GD Constable">
+        <div class="card-body">
+          <h5 class="card-title text-center">SSC GD Constable (Online)</h5>
+          <div class="row text-muted mb-2">
+            <div class="col-6 info-item">
+              <small>Total Test</small><br><strong>85</strong>
+            </div>
+            <div class="col-6 info-item">
+              <small>Total Question</small><br><strong>5300</strong>
+            </div>
+          </div>
+          <div class="row text-muted mb-2">
+            <div class="col-6 info-item">
+              <small>Language</small><br><strong>English/Hindi</strong>
+            </div>
+            <div class="col-6 info-item">
+              <small>Total Amount</small><br><strong>₹ 99/-</strong>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary w-100">View Test Series</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card card-custom">
+        <img src="{%  static 'images/testseries.jpg'%}" class="card-img-top" alt="SSC GD Constable">
+        <div class="card-body">
+          <h5 class="card-title text-center">SSC GD Constable (Online)</h5>
+          <div class="row text-muted mb-2">
+            <div class="col-6 info-item">
+              <small>Total Test</small><br><strong>85</strong>
+            </div>
+            <div class="col-6 info-item">
+              <small>Total Question</small><br><strong>5300</strong>
+            </div>
+          </div>
+          <div class="row text-muted mb-2">
+            <div class="col-6 info-item">
+              <small>Language</small><br><strong>English/Hindi</strong>
+            </div>
+            <div class="col-6 info-item">
+              <small>Total Amount</small><br><strong>₹ 99/-</strong>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary w-100">View Test Series</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card card-custom">
+        <img src="{%  static 'images/testseries.jpg'%}" class="card-img-top" alt="SSC GD Constable">
+        <div class="card-body">
+          <h5 class="card-title text-center">SSC GD Constable (Online)</h5>
+          <div class="row text-muted mb-2">
+            <div class="col-6 info-item">
+              <small>Total Test</small><br><strong>85</strong>
+            </div>
+            <div class="col-6 info-item">
+              <small>Total Question</small><br><strong>5300</strong>
+            </div>
+          </div>
+          <div class="row text-muted mb-2">
+            <div class="col-6 info-item">
+              <small>Language</small><br><strong>English/Hindi</strong>
+            </div>
+            <div class="col-6 info-item">
+              <small>Total Amount</small><br><strong>₹ 99/-</strong>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary w-100">View Test Series</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card card-custom">
+        <img src="{%  static 'images/testseries.jpg'%}" class="card-img-top" alt="SSC GD Constable">
+        <div class="card-body">
+          <h5 class="card-title text-center">SSC GD Constable (Online)</h5>
+          <div class="row text-muted mb-2">
+            <div class="col-6 info-item">
+              <small>Total Test</small><br><strong>85</strong>
+            </div>
+            <div class="col-6 info-item">
+              <small>Total Question</small><br><strong>5300</strong>
+            </div>
+          </div>
+          <div class="row text-muted mb-2">
+            <div class="col-6 info-item">
+              <small>Language</small><br><strong>English/Hindi</strong>
+            </div>
+            <div class="col-6 info-item">
+              <small>Total Amount</small><br><strong>₹ 99/-</strong>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary w-100">View Test Series</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Repeat this block for more cards -->
+  </div>
+</div>
+
+
+ <!-- End -->
+
+ <!-- Branch -->
+ <div class="p-5">
+  <div class="row">
+    
+    <!-- Card -->
+     <h3 class="text-center text-primary">Our Branches</h3>
+    <div class="col-md-4">
+      <div class="d-flex align-items-center branch-card">
+        <img src="{% static 'images/branch.jpg' %}" class="branch-img" alt="Musallahpur Hat">
+        <div>
+          <div class="branch-title">Musallahpur Hat - Patna</div>
+          <div class="branch-address">Near Sai Mandir, Musallahpur Koiritola, Patna, Bihar – 800006</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat for other branches -->
+    <div class="col-md-4">
+      <div class="d-flex align-items-center branch-card">
+        <img src="{% static 'images/branch.jpg' %}" class="branch-img" alt="Prayagraj">
+        <div>
+          <div class="branch-title">Prayagraj</div>
+          <div class="branch-address">8/8A Tej Bahadur Sapru Road, Prayagraj - 211001</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="d-flex align-items-center branch-card">
+        <img src="{% static 'images/branch.jpg' %}" class="branch-img" alt="Karol Bagh - Delhi">
+        <div>
+          <div class="branch-title">Karol Bagh - Delhi</div>
+          <div class="branch-address">56/4, Ground Floor, Old Rajendra Nagar New Delhi - 110060</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more cards here -->
+
+  </div>
+</div>
+ <!-- end -->
+  <!-- our team -->
+  <section class="team-section">
+    <div class="p-5">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold" style="color:#4b87f8;">Meet Our Teachers</h2>
+        <p>Expert Educators for Academic & Competitive Exams</p>
+      </div>
+      <div class="row g-4">
+        <!-- Teacher Card -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="team-card">
+            <img src="{% static 'images/teacher.jpg'%}" alt="Teacher Image" class="img-fluid w-100">
+            <div class="team-info">
+              <h5>Dr. Anjali Sharma</h5>
+              <p>M.Sc, Ph.D in Mathematics</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Duplicate Cards -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="team-card">
+            <img src="{% static 'images/teacher.jpg'%}" alt="Teacher Image" class="img-fluid w-100">
+            <div class="team-info">
+              <h5>Mr. Rajeev Malhotra</h5>
+              <p>M.A, NET Qualified - History</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- More cards as needed -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="team-card">
+            <img src="{% static 'images/teacher.jpg'%}" alt="Teacher Image" class="img-fluid w-100">
+            <div class="team-info">
+              <h5>Ms. Neha Verma</h5>
+              <p>B.Ed, CTET Qualified - English</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="team-card">
+            <img src="{% static 'images/teacher.jpg'%}" alt="Teacher Image" class="img-fluid w-100">
+            <div class="team-info">
+              <h5>Mr. Arjun Mehta</h5>
+              <p>M.Sc, NET - Physics</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more teacher cards as needed -->
+      </div>
+    </div>
+  </section>
+  <!-- end -->
+  <!-- Free Videos -->
+  <section class="video-section">
+    <div class="p-5">
+      <h2 class="video-title">Free Video Section</h2>
+      <div class="row g-4">
+        <!-- Video Item 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 videoback">
+          <div class="card video-card">
+            <img src="{% static 'images/thumnail.jpg'%}" alt="Video 1 Thumbnail">
+            <div class="card-body">
+              <p class="video-name text-white">Video Title 1</p>
+            </div>
+          </div>
+        </div>
+        <!-- Video Item 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card video-card">
+            <img src="{% static 'images/thumnail.jpg'%}" alt="Video 2 Thumbnail">
+            <div class="card-body">
+              <p class="video-name text-white">Video Title 2</p>
+            </div>
+          </div>
+        </div>
+        <!-- Video Item 3 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card video-card">
+            <img src="{% static 'images/thumnail.jpg'%}" alt="Video 3 Thumbnail">
+            <div class="card-body">
+              <p class="video-name text-white">Video Title 3</p>
+            </div>
+          </div>
+        </div>
+        <!-- Video Item 4 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card video-card">
+            <img src="{% static 'images/thumnail.jpg'%}" alt="Video 4 Thumbnail">
+            <div class="card-body">
+              <p class="video-name text-white">Video Title 4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End -->
+<!-- Footer  -->
+{% include 'footer.html'%}
+
+<!-- Footer End -->
+
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' c%}"></script>
+ 
+  <!-- Add Bootstrap Icons -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

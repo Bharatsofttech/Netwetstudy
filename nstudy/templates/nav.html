@@ -1,0 +1,44 @@
+{% load static%}
+<nav class="navbar navbar-custom  fixed-top">
+    <div class="container-fluid">
+      <!-- Row 1 -->
+      <div class="d-flex justify-content-between align-items-center py-2 w-100">
+        <img src="{% static 'images/navlogo1.png' %}" alt="Logo" class="logo">
+        <div class="dropdown d-none d-md-block">
+          <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            All Exams
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Exam 1</a></li>
+            <li><a class="dropdown-item" href="#">Exam 2</a></li>
+          </ul>
+        </div>
+        <form class="d-none d-md-flex flex-grow-1 mx-3">
+          <input class="form-control w-50" type="search" placeholder="What do you want to learn">
+        </form>
+        <div class="d-none d-md-flex align-items-center">
+          <a class="btn btn-outline-light me-2" href="#">NS Store</a>
+          <a class="btn btn-outline-light me-2" href="tel:8757354880">📞 8002226193</a>
+          <a class="btn btn-primary me-2" href="#">🔔</a>
+          <a class="btn btn-primary" href="#">Login / Register</a>
+        </div>
+  
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler d-md-none" type="button" onclick="toggleMobileMenu()">
+          ☰
+        </button>
+      </div>
+  
+      <!-- Row 2: Collapsible on mobile -->
+      <div id="mobileMenu" class="mobile-collapse flex-column flex-md-row align-items-center align-items-md-center">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/courses/">Courses</a>
+        <a class="nav-link" href="#">Practice</a>
+        <a class="nav-link" href="#">Current Affairs</a>
+        <a class="nav-link" href="#">Ask Doubt</a>
+        <a class="nav-link" href="#">Test Series</a>
+        <a class="nav-link" href="#">Study Materials</a>
+      </div>
+    </div>
+  </nav>
+  
