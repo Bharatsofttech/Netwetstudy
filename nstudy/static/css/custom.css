@@ -414,7 +414,7 @@ h2 {
   color: #2f5fc1;
 }
 .social-icons i {
-  font-size: 22px;
+  font-size: 20px;
 }
 /* end */
 
@@ -448,4 +448,23 @@ section p.lead {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+
 /* end */
+
+/* practice */
+/* .quiz-card {
+  max-height: 200px;
+  border-radius: 10px;
+}
+.bg-light:hover{
+  cursor: pointer;
+}
+.quiz-img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+} */
+
+/* end */
+
+

@@ -1,0 +1,100 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Netwet Study - Academic & Competitive Exam Courses Online</title>
+    <meta name="description"
+        content="Explore Netwet Study’s detailed courses for school academics and competitive exams like NEET, JEE, UPSC, SSC, and more. Get access to expert faculty, live classes, test series, and complete study materials online.">
+
+    <!-- SEO Tags -->
+    <meta name="keywords"
+        content="Netwet Study, online courses, NEET coaching, JEE preparation, UPSC classes, SSC, Banking, CBSE, ICSE, State Board, online education, competitive exams, live classes, e-learning">
+    <link rel="stylesheet" href="{% static 'CSS/custom.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favlogo.png'%}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    {% include 'nav.html' %}
+    <br> <br> <br>
+    <!-- Aboutus -->
+    <div class="p-2 mt-5">
+        <!-- Course Details -->
+        <div class="container py-4">
+            <div class="row g-4">
+                <!-- Left Content -->
+                <div class="col-lg-8">
+                    <h2>Bihar Police Batch 2025</h2>
+                    <h5 class="mb-3">What's included</h5>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="info-icon"><i class="bi bi-calendar"></i> Reg. Start Date – 11 Mar 2025</p>
+                            <p class="info-icon"><i class="bi bi-play-circle"></i> Class Start Date – 20 Mar 2025</p>
+                            <p class="info-icon"><i class="bi bi-shield-check"></i> Validity – Till Exam</p>
+                            <p class="info-icon"><i class="bi bi-translate"></i> Language – Hindi</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="info-icon"><i class="bi bi-calendar-check"></i> Reg. End Date – 30 Jun 2025</p>
+                            <p class="info-icon"><i class="bi bi-clock-history"></i> Duration – 5–6 Months</p>
+                            <p class="info-icon"><i class="bi bi-broadcast"></i> Type – Live Batch</p>
+                            <p class="info-icon"><i class="bi bi-download"></i> Downloadable – No</p>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="col-lg-4">
+                    <div class="card shadow rounded-4 overflow-hidden">
+                        <img src="../static/images/thumnail.jpg" class="img-fluid" alt="Course Banner" />
+                        <div class="card-body">
+                            <h5 class="card-title">Bihar Police Batch 2025</h5>
+                            <p class="card-price">
+                                Registration fee – <strong>Rs. 499/-</strong> <del>999/-</del>
+                            </p>
+                            <ul class="list-unstyled">
+                                <li class="info-icon"><i class="bi bi-shield-check"></i> Validity – Till Exam</li>
+                                <li class="info-icon"><i class="bi bi-broadcast"></i> Type – Live Batch</li>
+                                <li class="info-icon"><i class="bi bi-clock-history"></i> Duration – 5–6 Months</li>
+                                <li class="info-icon"><i class="bi bi-translate"></i> Language – Hindi</li>
+                            </ul>
+                            <a href="#" class="btn w-100 mt-2 btn btn-primary">Buy
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end -->
+
+    <!-- Footer  -->
+    {% include 'footer.html'%}
+
+    <!-- Footer End -->
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.bundle.min.js' c%}"></script>
+
+    <!-- Add Bootstrap Icons -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

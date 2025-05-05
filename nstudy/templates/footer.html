@@ -1,61 +1,89 @@
+{% load static %}
+<style>
+  /* footeer start  */
+  a i {
+    font-size: 15px;
+  }
+
+  @media (max-width: 600px) {
+    a i {
+      font-size: 12px;
+    }
+  }
+
+  /* footer end  */
+</style>
 <footer class="text-white pt-5 pb-4" style="background-color: #4b87f8;">
-    <div class="container text-md-left">
-      <div class="row text-md-left">
-  
-        <!-- About Us -->
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold">Netwet Study</h5>
-          <p>
-            Netwet Study is your go-to platform for educational resources, tutorials, and online learning tools to boost your knowledge.
-          </p>
-        </div>
-  
-        <!-- Quick Links -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
-          <p><a href="/" class="text-white text-decoration-none">Home</a></p>
-          <p><a href="/courses/" class="text-white text-decoration-none">Courses</a></p>
-          <p><a href="/aboutus/" class="text-white text-decoration-none">About Us</a></p>
-          <p><a href="/contact/" class="text-white text-decoration-none">Contact</a></p>
-          <p><a href="/team/" class="text-white text-decoration-none">Teams</a></p>
-        </div>
-  
-        <!-- Resources -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold">Resources</h5>
-          <p><a href="#" class="text-white text-decoration-none">Blog</a></p>
-          <p><a href="#" class="text-white text-decoration-none">FAQs</a></p>
-          <p><a href="/privacypolicy/" class="text-white text-decoration-none">Privacy Policy</a></p>
-          <p><a href="/terms/" class="text-white text-decoration-none">Terms-Conditions</a></p>
-        </div>
-  
-        <!-- Contact -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
-          <p><i class="fas fa-home me-3"></i>Netwet Study, Araria Bihar, India</p>
-          <p><i class="fas fa-envelope me-3"></i> info@netwetstudy.com</p>
-          <p><i class="fas fa-phone me-3"></i> +918002226193</p>
-        </div>
+  <div class="container text-md-left">
+    <div class="row text-md-left">
+
+      <!-- About Us -->
+      <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mt-3">
+        <img src="{% static 'images/navlogo1.png' %}" style="height: 120px;" alt="Logo" class="logo">
+
       </div>
-  
-      <hr class="mb-4">
-  
-      <!-- Social Media -->
-      <div class="row align-items-center">
-        <div class="col-md-7 col-lg-8">
-          <p>© 2025 Netwet Study. All rights reserved.</p>
-        </div>
-        <div class="col-md-5 col-lg-4">
-          <div class="text-center text-md-end">
-            <a href="#" class="btn btn-outline-light btn-floating m-1" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="btn btn-outline-light btn-floating m-1" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="btn btn-outline-light btn-floating m-1" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="btn btn-outline-light btn-floating m-1" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" class="btn btn-outline-light btn-floating m-1" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="btn btn-outline-light btn-floating m-1" aria-label="GitHub"><i class="fa-brands fa-whatsapp"></i></a>
-          </div>
+
+      <div class="col-md-2 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Netwet Study</h5>
+        <p>
+          Netwet Study is your go-to platform for educational resources, tutorials, and online learning tools to boost
+          your knowledge.
+        </p>
+
+
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+        <p><a href="/" class="text-white text-decoration-none">Home</a></p>
+        <p><a href="/courses/" class="text-white text-decoration-none">Courses</a></p>
+        <p><a href="/aboutus/" class="text-white text-decoration-none">About Us</a></p>
+        <p><a href="/contact/" class="text-white text-decoration-none">Contact</a></p>
+        <p><a href="/team/" class="text-white text-decoration-none">Teams</a></p>
+      </div>
+
+      <!-- Resources -->
+      <div class="col-md-3 col-lg-3 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Resources</h5>
+        <p><a href="#" class="text-white text-decoration-none">Blog</a></p>
+        <p><a href="#" class="text-white text-decoration-none">FAQs</a></p>
+        <p><a href="/privacypolicy/" class="text-white text-decoration-none">Privacy Policy</a></p>
+        <p><a href="/terms/" class="text-white text-decoration-none">Terms-Conditions</a></p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+        <p><i class="fas fa-home me-3"></i>Netwet Study, Araria Bihar, India</p>
+        <p><i class="fas fa-envelope me-3"></i> info@netwetstudy.com</p>
+        <p><i class="fas fa-phone me-3"></i> +918002226193</p>
+      </div>
+    </div>
+
+    <hr class="mb-4">
+
+    <!-- Social Media -->
+    <div class="row align-items-center">
+      <div class="col-md-7 col-lg-8">
+        <p>© 2025 Netwet Study. All rights reserved.</p>
+      </div>
+      <div class="col-md-5 col-lg-4">
+        <div class="text-center text-md-end">
+          <a href="#" class="btn btn-outline-light btn-floating m-1" aria-label="Facebook"><i
+              class="fab fa-facebook-f"></i></a>
+          <a href="#" class="btn btn-outline-light btn-floating m-1" aria-label="Twitter"><i
+              class="fab fa-twitter"></i></a>
+          <a href="#" class="btn btn-outline-light btn-floating m-1" aria-label="Instagram"><i
+              class="fab fa-instagram"></i></a>
+          <a href="#" class="btn btn-outline-light btn-floating m-1" aria-label="YouTube"><i
+              class="fab fa-youtube"></i></a>
+          <a href="#" class="btn btn-outline-light btn-floating m-1" aria-label="LinkedIn"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="btn btn-outline-light btn-floating m-1" aria-label="GitHub"><i
+              class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
     </div>
-  </footer>
-  
+  </div>
+</footer>

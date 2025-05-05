@@ -22,4 +22,13 @@ def privacypolicy(request):
 def terms(request):
     return render (request, 'terms.html')
 
+def doubts(request):
+    return render(request,'doubts.html')
 
+def practice(request):
+    return render(request,'practice.html')
+def testseries(request):
+    return render(request,'test-series.html')
+
+def coursesdetails(request):
+    return render(request,'courses-details.html')

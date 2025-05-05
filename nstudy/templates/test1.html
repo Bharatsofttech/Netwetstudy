@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Styled All Exams Modal</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+
+ 
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-custom py-3">
+    <div class="container-fluid">
+      <button class="btn btn-outline-light btn-all-exams ms-auto me-3" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#allExamsRightModal">
+        All Exams
+      </button>
+    </div>
+  </nav>
+
+  <!-- Right Side Modal -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="allExamsRightModal" aria-labelledby="allExamsRightModalLabel">
+    <div class="offcanvas-header">
+      <div>
+        <h5 class="offcanvas-title">All Exams</h5>
+        <small>Explore All Exams at KGS</small>
+      </div>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+
+      <div class="exam-item">
+        <div class="exam-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+        <div class="exam-content">
+          <h6>All Exams</h6>
+          <small>Explore All Exams at KGS</small>
+        </div>
+      </div>
+
+      <div class="exam-item">
+        <div class="exam-icon"><i class="bi bi-person-badge"></i></div>
+        <div class="exam-content">
+          <h6>Khan Sir Courses</h6>
+          <small>Geography | Polity | History | Economics</small>
+        </div>
+      </div>
+
+      <div class="exam-item">
+        <div class="exam-icon"><i class="bi bi-bank"></i></div>
+        <div class="exam-content">
+          <h6>UPSC & State PSC</h6>
+          <small>UPSC | BPSC | MP-PSC | UP-PSC</small>
+        </div>
+      </div>
+
+      <div class="exam-item">
+        <div class="exam-icon"><i class="bi bi-house-door"></i></div>
+        <div class="exam-content">
+          <h6>State Exams</h6>
+          <small>UP | Bihar | MP | Rajasthan</small>
+        </div>
+      </div>
+
+      <div class="exam-item">
+        <div class="exam-icon"><i class="bi bi-bezier2"></i></div>
+        <div class="exam-content">
+          <h6>NEET | JEE | CUET | Boards</h6>
+          <small>NEET | JEE | CUET | Boards</small>
+        </div>
+      </div>
+
+      <div class="exam-item">
+        <div class="exam-icon"><i class="bi bi-shield-lock"></i></div>
+        <div class="exam-content">
+          <h6>Defence Exams</h6>
+          <small>NDA | CDS | SSB | Agniveer</small>
+        </div>
+      </div>
+
+      <div class="exam-item">
+        <div class="exam-icon"><i class="bi bi-person-vcard"></i></div>
+        <div class="exam-content">
+          <h6>Police Exams</h6>
+          <small>UP SI | Bihar SI | Delhi Police</small>
+        </div>
+      </div>
+
+      <div class="exam-item">
+        <div class="exam-icon"><i class="bi bi-briefcase"></i></div>
+        <div class="exam-content">
+          <h6>SSC Exams</h6>
+          <small>CGL | CHSL | MTS | Delhi Police</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
