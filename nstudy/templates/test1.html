@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input with Icon</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .input-container {
+      position: relative;
+      width: 250px;
+    }
+
+    .input-container i {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: gray;
+    }
+
+    .input-container input {
+      width: 100%;
+      padding: 10px 10px 10px 35px; /* space for icon */
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+
+<div class="input-container">
+  <i class="fas fa-user"></i>
+  <input type="text" placeholder="Enter your name">
+</div>
+
+</body>
+</html>

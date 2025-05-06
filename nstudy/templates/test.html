@@ -1,3 +1,351 @@
 #6495ED
 #4b87f8
-Crousal Section Image : 1200*400
+Crousal Section Image : 1920*400
+
+{% load static%}
+<!-- <nav class="navbar navbar-custom  fixed-top">  
+
+  <div class="container-fluid">
+   
+    <div class="d-flex justify-content-between align-items-center py-2 w-100">
+      <div class="">
+        <img src="{% static 'images/navlogo1.png' %}" alt="Logo" width="200" height="200" class="logo">
+      </div>
+
+      <form class="d-none d-md-flex justify-content-center w-25 mx-auto">
+        <input class="form-control w-100" type="search" placeholder="What do you want to learn">
+      </form>
+
+      <div class="d-none d-md-flex align-items-center">
+        <div class="dropdown d-none d-md-block me-2">
+          <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            All Exams
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Exam 1</a></li>
+            <li><a class="dropdown-item" href="#">Exam 2</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-outline-light me-2" href="#">NS Store</a>
+        <a class="btn btn-outline-light me-2" href="tel:8757354880"> 8002226193</a>
+        <a class="btn btn-primary me-2" href="#"></a>
+        <a class="btn btn-primary" href="#">Login / Register</a>
+      </div>
+
+      
+      <button class="navbar-toggler d-md-none" type="button" onclick="toggleMobileMenu()">
+        ☰
+      </button>
+    </div>
+
+    
+    <div id="mobileMenu" class="mobile-collapse flex-column flex-md-row align-items-center align-items-md-center">
+      <a class="nav-link" href="/">Home</a>
+      <a class="nav-link" href="/courses/">Courses</a>
+      <a class="nav-link" href="#">Practice</a>
+      <a class="nav-link" href="#">Current Affairs</a>
+      <a class="nav-link" href="#">Ask Doubt</a>
+      <a class="nav-link" href="#">Test Series</a>
+      <a class="nav-link" href="#">Study Materials</a>
+    </div>
+  </div>
+</nav> -->
+
+<style>
+  .jay1 {
+    width: 100%;
+  }
+
+  .first {
+    width: 100%;
+  }
+
+  .second {
+    width: 100%;
+  }
+
+  .second #mobileMenu {
+    float: right;
+    gap: 45px;
+  }
+
+  .logo img {
+    position: absolute;
+    height: 85px;
+    width: auto;
+  }
+
+  @media (max-width: 600px) {
+    .logo img {
+      position: absolute;
+      height: 50px;
+      width: auto;
+    }
+
+    .second #mobileMenu {
+      float: left;
+
+    }
+
+  }
+</style>
+<style>
+  .navbar-custom {
+    background-color: #4b87f8;
+  }
+
+  .btn-all-exams {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .btn-all-exams:hover {
+    background-color: #fff;
+    color: #4b87f8;
+  }
+
+  .offcanvas-header {
+    background-color: #4b87f8;
+    color: white;
+    border-bottom: 1px solid #eee;
+  }
+
+  .offcanvas-title {
+    font-weight: bold;
+  }
+
+  .offcanvas-body {
+    padding: 0;
+  }
+
+  .exam-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+
+  .exam-item:hover {
+    background-color: #f5f5f5;
+  }
+
+  .exam-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+    color: #4b87f8;
+  }
+
+  .exam-content h6 {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .exam-content small {
+    color: #777;
+  }
+ 
+  #form{
+    margin-left: 810px;
+    width: 405px;
+  }
+</style>
+<div class="jay1">
+  <nav class="navbar navbar-custom  fixed-top">
+    <div class="container-fluid">
+      <!-- Row 1 -->
+      <div class="first">
+        <div class="d-flex justify-content-between align-items-center py-2 w-100">
+          <div class="logo ms-sm-5 ps-sm-4">
+            <img src="{% static 'images/navlogo1.png' %}" alt="Logo" class="logo border border-dark img-fluid">
+          </div>
+
+          <div class="search ms-5 d-flex d-block d-lg-none ">
+
+            <a class="nav-link" href=""><i class="fas fa-search nav-link"></i></a>
+            <button class="btn btn-primary btn-all-exams ms-auto me-0" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#allExamsRightModal">
+              All Exams
+            </button>
+          </div>
+
+          <!-- <form class="d-none d-md-flex justify-content-center w-50 mx-auto" > -->
+            <input class="form-control" type="search" id="form" placeholder="What do you want to learn">
+
+          <!-- </form> -->
+          <!-- <form class="d-none d-md-flex justify-content-center w-50 mx-auto" >
+            <input class="form-control w-100" type="search" id="form" placeholder="What do you want to learn">
+
+          </form> -->
+          <div class="dropdown d-none d-md-block">
+            <button class="btn btn-outline-light btn-all-exams ms-auto me-1" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#allExamsRightModal">
+              All Exams
+            </button>
+          </div>
+          <div class="d-none d-md-flex align-items-center">
+
+            
+            <a class="btn btn-outline-light me-2" href="#">Net Wet Store</a>
+            <a class="btn btn-outline-light me-2" href="tel:8757354880">📞 8002226193</a>
+            <a class="me-2" href="#">
+              <button class="btn btn-outline-primary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#notificationsRightModal">
+                🔔
+              </button>
+            </a>
+            <a class="btn btn-primary" href="#">Login / Register</a>
+          </div>
+
+          <!-- Mobile Toggle Button -->
+          <button class="navbar-toggler d-md-none" type="button" onclick="toggleMobileMenu()">
+            ☰
+          </button>
+        </div>
+      </div>
+
+      <!-- Row 2: Collapsible on mobile -->
+      <div class="second">
+        <div id="mobileMenu" class="mobile-collapse flex-column flex-md-row align-items-center align-items-md-center">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/courses/">Courses</a>
+          <a class="nav-link" href="/practice/">Practice</a>
+          <a class="nav-link" href="#">Current Affairs</a>
+          <a class="nav-link" href="/doubts/">Ask Doubt</a>
+          <a class="nav-link" href="{% url 'test-series' %}">Test Series</a>
+          <a class="nav-link" href="#">Study Materials</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+
+<!-- Right Side Modal -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="allExamsRightModal" aria-labelledby="allExamsRightModalLabel">
+  <div class="offcanvas-header">
+    <div>
+      <h5 class="offcanvas-title">All Exams</h5>
+      <small>Explore All Exams at KGS</small>
+    </div>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+      <div class="exam-content">
+        <h6>All Exams</h6>
+        <small>Explore All Exams at KGS</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-person-badge"></i></div>
+      <div class="exam-content">
+        <h6>Khan Sir Courses</h6>
+        <small>Geography | Polity | History | Economics</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-bank"></i></div>
+      <div class="exam-content">
+        <h6>UPSC & State PSC</h6>
+        <small>UPSC | BPSC | MP-PSC | UP-PSC</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-house-door"></i></div>
+      <div class="exam-content">
+        <h6>State Exams</h6>
+        <small>UP | Bihar | MP | Rajasthan</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-bezier2"></i></div>
+      <div class="exam-content">
+        <h6>NEET | JEE | CUET | Boards</h6>
+        <small>NEET | JEE | CUET | Boards</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-shield-lock"></i></div>
+      <div class="exam-content">
+        <h6>Defence Exams</h6>
+        <small>NDA | CDS | SSB | Agniveer</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-person-vcard"></i></div>
+      <div class="exam-content">
+        <h6>Police Exams</h6>
+        <small>UP SI | Bihar SI | Delhi Police</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-briefcase"></i></div>
+      <div class="exam-content">
+        <h6>SSC Exams</h6>
+        <small>CGL | CHSL | MTS | Delhi Police</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- notifaction modal -->
+<!-- Right side Offcanvas -->
+<style>
+  .offcanvas-header {
+    border-bottom: 1px solid #eee;
+  }
+
+  .notification-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 40px 20px;
+  }
+
+  .notification-body img {
+    max-width: 180px;
+    margin-bottom: 30px;
+  }
+
+  .notification-text {
+    font-size: 18px;
+    color: #444;
+    font-weight: 500;
+  }
+</style>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="notificationsRightModal"
+  aria-labelledby="notificationsRightModalLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="notificationsRightModalLabel">Notifications</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body notification-body">
+    <img src="https://cdn-icons-png.flaticon.com/512/10471/10471541.png" alt="No notifications" />
+    <div class="notification-text">
+      You're all caught up—no notifications available.
+    </div>
+  </div>
+</div>
+<br><br><br>

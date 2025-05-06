@@ -1,0 +1,40 @@
+
+/* test-series */
+
+.category-card {
+    background-color: #f1edff;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    box-shadow: 0 0 0 1px #e5e7eb;
+  }
+
+  .category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .category-top img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+
+  .category-bottom {
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+    padding: 10px;
+    font-weight: 500;
+  }
+
+  .category-top {
+    padding-bottom: 10px;
+  }
+
+
+
+/* end */

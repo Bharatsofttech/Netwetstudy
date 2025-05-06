@@ -79,12 +79,14 @@ WSGI_APPLICATION = 'Netwetstudy.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+# MEDIA_URL = '/static/'
+
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.mysql',
             'NAME': 'netwet',
             'USER': 'root',
-            'PASSWORD': 'Netwet@1234',
+            'PASSWORD': 'Bharat@2025',
             'HOST': 'localhost',
             'PORT': '3306', # default port
         }
@@ -125,6 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+MEDIA_ROOT = BASE_DIR / 'static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field

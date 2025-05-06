@@ -1,0 +1,126 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Netwet Study - Academic & Competitive Exam Courses Online</title>
+  <!-- Meta Description -->
+<!-- Meta Title -->
+<meta name="title" content="Online Academic & Competitive Exam Courses | Netwet Study">
+
+<!-- Meta Description -->
+<meta name="description" content="Explore online courses by Netwet Study for school academics, government exams, and competitive tests. Learn from expert instructors and boost your success.">
+
+<!-- Meta Keywords (optional for some SEO practices) -->
+<meta name="keywords" content="online courses, academic courses, competitive exams, Netwet Study, government exam preparation, online learning, UPSC, SSC, NEET, JEE, school courses">
+
+<!-- Open Graph (OG) Tags for Social Sharing -->
+<meta property="og:title" content="Online Academic & Competitive Exam Courses | Netwet Study">
+<meta property="og:description" content="Access top-rated online courses for academic subjects and competitive exams. Join Netwet Study and start learning today.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.netwetstudy.com/courses"> <!-- Replace with actual URL -->
+<meta property="og:image" content="https://www.netwetstudy.com/images/course-banner.jpg"> <!-- Replace with actual image URL -->
+
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Online Academic & Competitive Exam Courses | Netwet Study">
+<meta name="twitter:description" content="Join Netwet Study for expert-led online courses for school subjects and competitive exams like UPSC, NEET, JEE, and more.">
+<meta name="twitter:image" content="https://www.netwetstudy.com/images/course-banner.jpg"> <!-- Replace with actual image URL -->
+  <link rel="stylesheet" href="{% static 'CSS/custom.css' %}">
+  <link rel="stylesheet" href="{% static 'CSS/bootstrap.min.css' %}">
+  <link rel="icon" type="image/x-icon" href="{% static 'images/favlogo.png'%}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+ {% include 'nav.html' %}
+ <br><br>
+ <!-- All Courses -->
+ <div class="p-0 mt-5">
+    
+      <div class="col-md-12 text-center">
+        <img src="{% static 'images/allcourses.jpg'%}" alt="Student Illustration" class="img-fluid w-100" style="max-height: 450px;">
+      </div>
+    </div>
+
+    
+      
+    </div>
+  </div>
+
+ <!-- end  -->
+  <!-- doubts -->
+  <div class="container p-2">
+    <div class="row contact-section">
+      <!-- Contact Form -->
+      <div class="col-md-12 mb-4 mb-md-0">
+        <h2 class="mb-4 text-center">Ask question and get verified answer.</h2>
+        <form>
+            <h4>We are here to solve your Doubts </h4>
+            Submit your doubt in the form listed below, our team will reach back to you with the solution.<br>
+            *Note: Submit your doubt with your registered mobile number.<br><br>
+        
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your name" maxlength="100">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Email address" maxlength="100">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="email" placeholder="Phone Number" maxlength="10">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Doubt Types</label>
+            <select class="form-select" aria-label="Default select example">
+                
+                <option value="1">Batch Related</option>
+                <option value="2">Test Series Related</option>
+                <option value="3">NS Store Related</option>
+                <option value="3">Payment Related</option>
+                <option value="3">Website Related</option>
+                <option value="3">Offline Class Related</option>
+                <option value="3">Online Class Related</option>
+                <option value="3">Others</option>
+              </select>
+          </div>
+          
+          <div class="mb-3">
+            <label for="message" class="form-label">Doubts in Words (Up to 255 words)</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+          </div>
+          <div class="mb-3">
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- Google Map -->
+      
+    </div>
+  </div>
+  <!-- end -->
+
+<!-- Footer  -->
+{% include 'footer.html'%}
+
+<!-- Footer End -->
+
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' c%}"></script>
+ 
+  <!-- Add Bootstrap Icons -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

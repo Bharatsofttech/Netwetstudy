@@ -1,44 +1,407 @@
 {% load static%}
-<nav class="navbar navbar-custom  fixed-top">
+
+<style>
+  .jay1 {
+    width: 100%;
+  }
+
+  .first {
+    width: 100%;
+  }
+
+  .second {
+    width: 100%;
+  }
+
+  .second #mobileMenu {
+    float: right;
+    padding-right: 25px;
+    gap: 35px;
+  }
+
+  .logo img {
+    position: absolute;
+    height: 90px;
+    width: auto;
+  }
+</style>
+<style>
+  .navbar-custom {
+    background-color: #4b87f8;
+  }
+
+  .btn-all-exams {
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .btn-all-exams:hover {
+    background-color: #fff;
+    color: #4b87f8;
+  }
+
+  .offcanvas-header {
+    background-color: #4b87f8;
+    color: white;
+    border-bottom: 1px solid #eee;
+  }
+
+  .offcanvas-title {
+    font-weight: bold;
+  }
+
+  .offcanvas-body {
+    padding: 0;
+  }
+
+  .exam-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+
+  .exam-item:hover {
+    background-color: #f5f5f5;
+  }
+
+  .exam-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+    color: #4b87f8;
+  }
+
+  .exam-content h6 {
+    margin: 0;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .exam-content small {
+    color: #777;
+  }
+
+  #form {
+    margin-left: 735px;
+    width: 385px;
+    padding-left: 35px;
+    /* position: fixed; */
+  }
+
+  .fa-rocket {
+    position: absolute;
+    margin-left: 823px;
+    position: fixed;
+  }
+
+  .netwetstudy {
+    position: absolute;
+    margin-left: 130px;
+    font-size: 70px;
+    text-transform: uppercase;
+    padding: 0px 15px;
+  }
+
+  /* .headerlogo{
+    height: 200px;
+  } */
+  /* Example: Show mobile menu on screens less than 1024px */
+  /* @media screen and (max-width: 1024px) {
+    #toggleMobileMenu {
+      display: block;
+    }
+  } */
+  .btn-dark:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .btn-dark-login {
+    display: none;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+      padding-left: 15px;
+    }
+
+    .logo img {
+      position: absolute;
+      height: 50px;
+      width: auto;
+
+    }
+
+    .second #mobileMenu {
+      float: left;
+
+    }
+
+    #form {
+      display: none;
+    }
+
+    .netwetstudy {
+      display: none;
+    }
+
+    .navbar-toggler {
+      display: initial;
+    }
+
+    .btn-outline-light {
+      display: none;
+    }
+
+    .second {
+      display: none;
+    }
+
+    .users {
+      display: none;
+    }
+
+
+
+  }
+
+  @media (max-width: 800px) {
+    .logo {
+      padding-left: 15px;
+    }
+
+    .logo img {
+      position: absolute;
+      height: 50px;
+      width: auto;
+
+    }
+
+    .second #mobileMenu {
+      float: left;
+
+    }
+
+    #form {
+      display: none;
+    }
+
+    .netwetstudy {
+      display: none;
+    }
+
+    .btn-dark-login {
+      display: initial;
+    }
+  }
+</style>
+<div class="jay1">
+  <nav class="navbar navbar-custom  fixed-top">
     <div class="container-fluid">
       <!-- Row 1 -->
-      <div class="d-flex justify-content-between align-items-center py-2 w-100">
-        <img src="{% static 'images/navlogo1.png' %}" alt="Logo" class="logo">
-        <div class="dropdown d-none d-md-block">
-          <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown">
-            All Exams
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Exam 1</a></li>
-            <li><a class="dropdown-item" href="#">Exam 2</a></li>
-          </ul>
+      <div class="first">
+        <div class="d-flex justify-content-between align-items-center py-2 w-100">
+          <div class="logo ms-sm-5 ps-sm-4">
+            <img src="{% static 'images/footerlogo.png' %}" alt="Logo" class="headerlogo img-fluid">
+            <!-- <h1 class="netwetstudy ">N<span class="text-danger">et</span>w<span class="text-danger">et</span> Stud<span class="text-danger">y</span></h1> -->
+            <h1 class="netwetstudy text-white shadow  mb-5 rounded">Netwet Study</h1>
+          </div>
+         
+          <div class="search ms-5 d-flex d-block d-lg-none" style="height: 39px;">
+
+            <a class="nav-link btn btn-dark users btn-dark-login me-2" href=""><i class="fas fa-search nav-link"></i></a>
+            <a class="btn btn-dark users btn-dark-login" href="#"><i class="fa-solid fa-key"></i> Login</a>
+
+          </div>
+
+          <!-- <form class="d-none d-md-flex justify-content-center w-50 mx-auto" > -->
+          <i class="fa-solid fa-rocket"></i>
+          <input class="form-control" type="search" id="form" placeholder="What do you want to learn">
+
+          <!-- </form> -->
+          <!-- <form class="d-none d-md-flex justify-content-center w-50 mx-auto" >
+            <input class="form-control w-100" type="search" id="form" placeholder="What do you want to learn">
+
+          </form> -->
+
+          <div class="d-none d-md-flex align-items-center" style="padding-right: 25px;">
+            <div class="dropdown d-none d-md-block me-2">
+              <button class="btn btn-outline-light btn-all-exams ms-auto" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#allExamsRightModal">
+                <i class="fa-solid fa-book-open-reader"></i> All Exams
+              </button>
+            </div>
+
+            <a class="btn btn-outline-light me-2" href="#"><i class="fa-solid fa-cart-shopping"></i> Netwet Store</a>
+            <a class="btn btn-outline-light me-2" href="tel:+91 8757354880"><i class="fa-solid fa-phone"></i> +91
+              8002226193</a>
+            <a class="me-2" href="#">
+              <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#notificationsRightModal">
+                <i class="fa-solid fa-bell"></i>
+              </button>
+            </a>
+            <a class="btn btn-dark users" href="#"><i class="fa-solid fa-users"></i> Login / Register</a>
+          </div>
+
+          <!-- Mobile Toggle Button -->
+          <div id="toggleMobileMenu">
+            <button class="d-md-none btn btn-dark users btn-dark-login" type="button" onclick="toggleMobileMenu()">
+              ☰
+            </button>
+          </div>
+          <!-- <button class="navbar-toggler" type="button" onclick="toggleMobileMenu()">
+            ☰
+          </button> -->
         </div>
-        <form class="d-none d-md-flex flex-grow-1 mx-3">
-          <input class="form-control w-50" type="search" placeholder="What do you want to learn">
-        </form>
-        <div class="d-none d-md-flex align-items-center">
-          <a class="btn btn-outline-light me-2" href="#">NS Store</a>
-          <a class="btn btn-outline-light me-2" href="tel:8757354880">📞 8002226193</a>
-          <a class="btn btn-primary me-2" href="#">🔔</a>
-          <a class="btn btn-primary" href="#">Login / Register</a>
-        </div>
-  
-        <!-- Mobile Toggle Button -->
-        <button class="navbar-toggler d-md-none" type="button" onclick="toggleMobileMenu()">
-          ☰
-        </button>
       </div>
-  
+
       <!-- Row 2: Collapsible on mobile -->
-      <div id="mobileMenu" class="mobile-collapse flex-column flex-md-row align-items-center align-items-md-center">
-        <a class="nav-link" href="/">Home</a>
-        <a class="nav-link" href="/courses/">Courses</a>
-        <a class="nav-link" href="#">Practice</a>
-        <a class="nav-link" href="#">Current Affairs</a>
-        <a class="nav-link" href="#">Ask Doubt</a>
-        <a class="nav-link" href="#">Test Series</a>
-        <a class="nav-link" href="#">Study Materials</a>
+      <div class="second">
+        <div id="mobileMenu" class="mobile-collapse flex-column flex-md-row align-items-center align-items-md-center">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/courses/">Courses</a>
+          <a class="nav-link" href="/practice/">Practice</a>
+          <a class="nav-link" href="#">Current Affairs</a>
+          <a class="nav-link" href="/doubts/">Ask Doubt</a>
+          <a class="nav-link" href="{% url 'test-series' %}">Test Series</a>
+          <a class="nav-link" href="{% url 'study-materials' %}">Study Material</a>
+          <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+        </div>
       </div>
     </div>
   </nav>
-  
+</div>
+
+
+
+
+<!-- Right Side Modal -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="allExamsRightModal" aria-labelledby="allExamsRightModalLabel">
+  <div class="offcanvas-header">
+    <div>
+      <h5 class="offcanvas-title">All Exams</h5>
+      <small>Explore All Exams at KGS</small>
+    </div>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-grid-3x3-gap-fill"></i></div>
+      <div class="exam-content">
+        <h6>All Exams</h6>
+        <small>Explore All Exams at KGS</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-person-badge"></i></div>
+      <div class="exam-content">
+        <h6>Khan Sir Courses</h6>
+        <small>Geography | Polity | History | Economics</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-bank"></i></div>
+      <div class="exam-content">
+        <h6>UPSC & State PSC</h6>
+        <small>UPSC | BPSC | MP-PSC | UP-PSC</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-house-door"></i></div>
+      <div class="exam-content">
+        <h6>State Exams</h6>
+        <small>UP | Bihar | MP | Rajasthan</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-bezier2"></i></div>
+      <div class="exam-content">
+        <h6>NEET | JEE | CUET | Boards</h6>
+        <small>NEET | JEE | CUET | Boards</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-shield-lock"></i></div>
+      <div class="exam-content">
+        <h6>Defence Exams</h6>
+        <small>NDA | CDS | SSB | Agniveer</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-person-vcard"></i></div>
+      <div class="exam-content">
+        <h6>Police Exams</h6>
+        <small>UP SI | Bihar SI | Delhi Police</small>
+      </div>
+    </div>
+
+    <div class="exam-item">
+      <div class="exam-icon"><i class="bi bi-briefcase"></i></div>
+      <div class="exam-content">
+        <h6>SSC Exams</h6>
+        <small>CGL | CHSL | MTS | Delhi Police</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<!-- notifaction modal -->
+<!-- Right side Offcanvas -->
+<style>
+  .offcanvas-header {
+    border-bottom: 1px solid #eee;
+  }
+
+  .notification-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 40px 20px;
+  }
+
+  .notification-body img {
+    max-width: 180px;
+    margin-bottom: 30px;
+  }
+
+  .notification-text {
+    font-size: 18px;
+    color: #444;
+    font-weight: 500;
+  }
+</style>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="notificationsRightModal"
+  aria-labelledby="notificationsRightModalLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="notificationsRightModalLabel">Notifications</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body notification-body">
+    <img src="https://cdn-icons-png.flaticon.com/512/10471/10471541.png" alt="No notifications" />
+    <div class="notification-text">
+      You're all caught up—no notifications available.
+    </div>
+  </div>
+</div>
+<br><br><br>
+
+
+</script>
