@@ -32,6 +32,7 @@ def testseries(request):
     return render(request,'test-series.html')
 
 def coursesdetails(request):
+<<<<<<< HEAD
     return render(request,'courses-details.html')
 
 def gallery(request):
@@ -57,3 +58,6 @@ def contact1(request):
     else:
         messages.error(request, "Something went wrong while sending your message.")
         return redirect('/contact/')
+=======
+    return render(request,'courses-details.html')
+>>>>>>> 8128982ebd3cc5687deccef3b438d7bd542f2310

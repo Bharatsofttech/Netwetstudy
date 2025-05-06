@@ -13,8 +13,11 @@ urlpatterns = [
     path('practice/',views.practice,name="practice"),
     path('test-series/',views.testseries,name="test-series"),
     path('courses-details/',views.coursesdetails,name="courses-details"),
+<<<<<<< HEAD
     path('gallery/',views.gallery,name="gallery"),
     path('study-materials',views.studymaterials,name='study-materials'),
+=======
+>>>>>>> 8128982ebd3cc5687deccef3b438d7bd542f2310
    
     path('contact1/',views.contact1,name="contact1"),
 ]
